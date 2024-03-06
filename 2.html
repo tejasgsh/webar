@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Sphere on Hiro Marker</title>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aframe-ar@3.0.4/build/aframe-ar.min.js"></script>
+</head>
+<body>
+  <a-scene arjs>
+    <a-marker preset="hiro">
+      <a-entity camera></a-entity>
+      <a-sphere position="0 1.5 0" radius="0.5" color="blue"></a-sphere>
+    </a-marker>
+  </a-scene>
+</body>
+</html>
